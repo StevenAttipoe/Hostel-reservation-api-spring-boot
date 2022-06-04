@@ -43,9 +43,10 @@ public class ResidentService implements ResidentServiceInterface{
                 .stream()
                 .map(res -> new Resident(
                         res.getId(),
-                        res.getResidentId(),
+                        res.getResident_id(),
+                        res.getResident_name(),
                         res.getEmail(),
-                        res.getResidentName()))
+                        res.getPassword()))
                 .collect(Collectors.toList());
 
         return residents;
