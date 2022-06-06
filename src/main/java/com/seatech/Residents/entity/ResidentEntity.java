@@ -7,7 +7,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "residents")
 public class ResidentEntity {
-
     @Id //done for every primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     //Automically generates ID with an increment of 1
@@ -20,6 +19,4 @@ public class ResidentEntity {
     private String email;
 
     private String password;
-
-
 }

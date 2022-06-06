@@ -10,5 +10,4 @@ public class Resident {
     private String resident_name;
     private String email;
     private String password;
-
 }
